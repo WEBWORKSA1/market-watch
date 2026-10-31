@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>11 Free Investing Calculators: Compound Interest, Position Size, Fair Value | Market.Watch</title>
+<meta name="description" content="Free investing calculators: compound interest, position size, risk/reward, average cost, FIRE number, P/E fair value, inflation, Rule of 72, dividend income, profit/loss and loan payment, plus a live currency converter.">
+<link rel="canonical" href="https://market.watch/tools.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Market.Watch"><meta property="og:title" content="11 Free Investing Calculators | Market.Watch"><meta property="og:description" content="Compound interest, position sizing, fair value and more. Private and instant."><meta property="og:url" content="https://market.watch/tools.html"><meta property="og:image" content="https://market.watch/assets/img/og.svg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('mw-theme')||'dark')}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+</head>
+<body data-page="tools">
+<div id="mw-top"></div>
+<main id="main">
+<section class="page-hero">
+ <div class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> / Tools</div>
+  <h1>Investing Calculators</h1>
+  <p class="lead">Eleven calculators that answer the questions investors actually ask. Results update as you type, and nothing leaves your device.</p>
+  <nav class="toolnav tabs" aria-label="Calculators"><a class="btn btn-ghost btn-sm" href="#compound">Compound</a><a class="btn btn-ghost btn-sm" href="#position">Position size</a><a class="btn btn-ghost btn-sm" href="#rr">Risk/Reward</a><a class="btn btn-ghost btn-sm" href="#avg">Average cost</a><a class="btn btn-ghost btn-sm" href="#fire">FIRE</a><a class="btn btn-ghost btn-sm" href="#fairvalue">Fair value</a><a class="btn btn-ghost btn-sm" href="#inflation">Inflation</a><a class="btn btn-ghost btn-sm" href="#r72">Rule of 72</a><a class="btn btn-ghost btn-sm" href="#dividend">Dividends</a><a class="btn btn-ghost btn-sm" href="#pl">Profit/Loss</a><a class="btn btn-ghost btn-sm" href="#loan">Loan</a><a class="btn btn-ghost btn-sm" href="#fx">Currency</a></nav>
+ </div>
+</section>
+
+<section class="tight" id="compound">
+ <div class="wrap"><div class="card"><h2>Compound Growth Calculator</h2><p>How much will regular investing grow to? Try changing the years: time is the most powerful input.</p>
+  <div class="calc mt2"><form id="fCompound"><div class="row"><div class="field"><label for="ciP">Starting amount ($)</label><input id="ciP" type="number" value="10000" min="0" step="100"></div><div class="field"><label for="ciM">Monthly contribution ($)</label><input id="ciM" type="number" value="500" min="0" step="50"></div></div><div class="row"><div class="field"><label for="ciR">Annual return (%)</label><input id="ciR" type="number" value="7" step="0.1"></div><div class="field"><label for="ciY">Years</label><input id="ciY" type="number" value="25" min="1" max="80"></div></div><div class="field"><label for="ciN">Compounding</label><select id="ciN"><option value="12">Monthly</option><option value="4">Quarterly</option><option value="1">Annually</option><option value="365">Daily</option></select></div></form><div class="result" id="ciOut" aria-live="polite"></div></div></div></div>
+</section>
+
+<section class="tight" id="position">
+ <div class="wrap grid g2">
+  <div class="card"><h2>Position Size Calculator</h2><p>Risk a fixed percentage of your account on each trade.</p><div class="mt2"><form id="fPos"><div class="row"><div class="field"><label for="psA">Account size ($)</label><input id="psA" type="number" value="25000"></div><div class="field"><label for="psR">Risk per trade (%)</label><input id="psR" type="number" value="1" step="0.1"></div></div><div class="row"><div class="field"><label for="psE">Entry price ($)</label><input id="psE" type="number" value="150" step="0.01"></div><div class="field"><label for="psS">Stop-loss price ($)</label><input id="psS" type="number" value="142" step="0.01"></div></div></form><div class="result" id="psOut" aria-live="polite"></div></div></div>
+  <div class="card" id="rr"><h2>Risk/Reward Calculator</h2><p>Is the potential gain worth the potential loss?</p><div class="mt2"><form id="fRR"><div class="row"><div class="field"><label for="rrE">Entry ($)</label><input id="rrE" type="number" value="150" step="0.01"></div><div class="field"><label for="rrS">Stop ($)</label><input id="rrS" type="number" value="142" step="0.01"></div></div><div class="field"><label for="rrT">Target ($)</label><input id="rrT" type="number" value="172" step="0.01"></div></form><div class="result" id="rrOut" aria-live="polite"></div></div></div>
+ </div>
+</section>
+
+<section class="tight" id="avg">
+ <div class="wrap grid g2">
+  <div class="card"><h2>Average Cost Calculator</h2><p>See your new break-even after buying more shares.</p><div class="mt2"><form id="fAvg"><div class="row"><div class="field"><label for="avS1">Shares owned</label><input id="avS1" type="number" value="50"></div><div class="field"><label for="avP1">Average price ($)</label><input id="avP1" type="number" value="120" step="0.01"></div></div><div class="row"><div class="field"><label for="avS2">Shares to buy</label><input id="avS2" type="number" value="25"></div><div class="field"><label for="avP2">Buy price ($)</label><input id="avP2" type="number" value="96" step="0.01"></div></div><div class="field"><label for="avC">Current price (optional, $)</label><input id="avC" type="number" value="100" step="0.01"></div></form><div class="result" id="avOut" aria-live="polite"></div></div></div>
+  <div class="card" id="fire"><h2>FIRE Number Calculator</h2><p>The portfolio size that can fund your yearly spending.</p><div class="mt2"><form id="fFire"><div class="row"><div class="field"><label for="fiE">Annual expenses ($)</label><input id="fiE" type="number" value="48000"></div><div class="field"><label for="fiW">Withdrawal rate (%)</label><input id="fiW" type="number" value="4" step="0.1"></div></div><div class="row"><div class="field"><label for="fiS">Current savings ($)</label><input id="fiS" type="number" value="150000"></div><div class="field"><label for="fiM">Monthly saving ($)</label><input id="fiM" type="number" value="2000"></div></div><div class="field"><label for="fiR">Expected annual return (%)</label><input id="fiR" type="number" value="6" step="0.1"></div></form><div class="result" id="fiOut" aria-live="polite"></div></div></div>
+ </div>
+</section>
+
+<section class="tight" id="fairvalue">
+ <div class="wrap grid g2">
+  <div class="card"><h2>Fair Value (P/E) Calculator</h2><p>Project earnings forward, apply an exit P/E, discount back to today.</p><div class="mt2"><form id="fPE"><div class="row"><div class="field"><label for="peE">Current EPS ($)</label><input id="peE" type="number" value="6.5" step="0.01"></div><div class="field"><label for="peG">EPS growth (%/yr)</label><input id="peG" type="number" value="10" step="0.1"></div></div><div class="row"><div class="field"><label for="peY">Years</label><input id="peY" type="number" value="5" min="1"></div><div class="field"><label for="peT">Exit P/E</label><input id="peT" type="number" value="22" step="0.1"></div></div><div class="row"><div class="field"><label for="peD">Required return (%)</label><input id="peD" type="number" value="9" step="0.1"></div><div class="field"><label for="peP">Current price ($)</label><input id="peP" type="number" value="180" step="0.01"></div></div></form><div class="result" id="peOut" aria-live="polite"></div></div></div>
+  <div class="card" id="inflation"><h2>Inflation Calculator</h2><p>What will today&rsquo;s costs be in the future, and what is cash really worth?</p><div class="mt2"><form id="fInf"><div class="field"><label for="inA">Amount today ($)</label><input id="inA" type="number" value="1000"></div><div class="row"><div class="field"><label for="inR">Inflation rate (%)</label><input id="inR" type="number" value="3" step="0.1"></div><div class="field"><label for="inY">Years</label><input id="inY" type="number" value="20"></div></div></form><div class="result" id="inOut" aria-live="polite"></div></div></div>
+ </div>
+</section>
+
+<section class="tight" id="r72">
+ <div class="wrap grid g2">
+  <div class="card"><h2>Rule of 72</h2><p>Divide 72 by the annual return to estimate years to double.</p><div class="mt2"><form id="f72"><div class="field"><label for="r72in">Annual return (%)</label><input id="r72" type="number" value="8" step="0.1" aria-label="Annual return percent"></div></form><div class="result" id="o72" aria-live="polite"></div></div></div>
+  <div class="card" id="dividend"><h2>Dividend Income Calculator</h2><p>Yield, income today, and income after a decade of dividend growth.</p><div class="mt2"><form id="fDiv"><div class="row"><div class="field"><label for="dvP">Share price ($)</label><input id="dvP" type="number" value="60" step="0.01"></div><div class="field"><label for="dvD">Annual dividend/share ($)</label><input id="dvD" type="number" value="2.1" step="0.01"></div></div><div class="row"><div class="field"><label for="dvS">Shares</label><input id="dvS" type="number" value="300"></div><div class="field"><label for="dvG">Dividend growth (%/yr)</label><input id="dvG" type="number" value="6" step="0.1"></div></div></form><div class="result" id="dvOut" aria-live="polite"></div></div></div>
+ </div>
+</section>
+
+<section class="tight" id="pl">
+ <div class="wrap grid g2">
+  <div class="card"><h2>Profit / Loss Calculator</h2><p>Net result of a trade after fees, plus your break-even price.</p><div class="mt2"><form id="fPL"><div class="row"><div class="field"><label for="plB">Buy price ($)</label><input id="plB" type="number" value="42" step="0.01"></div><div class="field"><label for="plS">Sell price ($)</label><input id="plS" type="number" value="49.5" step="0.01"></div></div><div class="row"><div class="field"><label for="plQ">Quantity</label><input id="plQ" type="number" value="200"></div><div class="field"><label for="plF">Total fees ($)</label><input id="plF" type="number" value="10" step="0.01"></div></div></form><div class="result" id="plOut" aria-live="polite"></div></div></div>
+  <div class="card" id="loan"><h2>Loan Payment Calculator</h2><p>Monthly payment and lifetime interest on a fixed-rate loan.</p><div class="mt2"><form id="fLoan"><div class="field"><label for="lnP">Loan amount ($)</label><input id="lnP" type="number" value="300000"></div><div class="row"><div class="field"><label for="lnR">Interest rate (%)</label><input id="lnR" type="number" value="6.25" step="0.01"></div><div class="field"><label for="lnY">Term (years)</label><input id="lnY" type="number" value="25"></div></div></form><div class="result" id="lnOut" aria-live="polite"></div></div></div>
+ </div>
+</section>
+
+<section class="tight" id="fx">
+ <div class="wrap"><div class="panel"><div class="panel-h"><h2>Live currency cross rates</h2><span class="tag">Live</span></div><div class="panel-b"><div class="tv" data-tv="forex-cross-rates" data-h="440"></div></div></div></div>
+</section>
+
+<section class="alt">
+ <div class="wrap prose">
+  <h2 class="mt0">How to get the most from these calculators</h2>
+  <p><strong>Use conservative assumptions.</strong> Long-run stock market returns have historically averaged high single digits before inflation, but no return is guaranteed and sequences of bad years happen. Run each scenario at a pessimistic, base and optimistic rate.</p>
+  <p><strong>Risk first, reward second.</strong> Professional traders decide how much they are willing to lose before they think about upside. The position size and risk/reward calculators enforce that discipline. Our guide on <a href="learn/risk-management-and-position-sizing.html">risk management</a> explains the maths.</p>
+  <p><strong>Remember inflation and fees.</strong> A 7% nominal return with 3% inflation is roughly 4% in real purchasing power. A 1% annual fee can consume a large share of long-term gains. See <a href="learn/compound-interest-and-dollar-cost-averaging.html">compound interest and dollar-cost averaging</a>.</p>
+  <p class="note">Calculators are educational estimates, not financial advice, and do not account for taxes or your personal situation.</p>
+ </div>
+</section>
+</main>
+<div id="mw-foot"></div>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/tools.js" defer></script>
+</body>
+</html>

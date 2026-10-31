@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live Markets Dashboard: Stocks, Crypto, Forex, Commodities | Market.Watch</title>
+<meta name="description" content="Free live markets dashboard with an advanced interactive chart, stock and crypto heatmaps, forex cross rates, commodities, bonds, technical ratings and market news.">
+<link rel="canonical" href="https://market.watch/markets.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Market.Watch"><meta property="og:title" content="Live Markets Dashboard | Market.Watch"><meta property="og:description" content="Advanced charts, heatmaps, forex, crypto, commodities and news in one dashboard."><meta property="og:url" content="https://market.watch/markets.html"><meta property="og:image" content="https://market.watch/assets/img/og.svg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('mw-theme')||'dark')}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+</head>
+<body data-page="markets">
+<div id="mw-top"></div>
+<main id="main">
+<section class="page-hero">
+ <div class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> / Live Markets</div>
+  <h1>Live Markets Dashboard</h1>
+  <p class="lead">Chart any stock, index, ETF, coin or currency pair, then scan every asset class below. Data provided by TradingView; some exchanges are delayed.</p>
+ </div>
+</section>
+
+<section class="tight">
+ <div class="wrap">
+  <div class="panel">
+   <div class="panel-h">
+    <h2>Advanced chart</h2>
+    <form data-symbol-form="#chart" style="display:flex;gap:8px;flex:1;max-width:420px" role="search"><label for="sym" class="skip">Symbol</label><input id="sym" placeholder="Symbol, e.g. NASDAQ:TSLA, BINANCE:BTCUSDT" autocomplete="off"><button class="btn btn-pri btn-sm" type="submit">Chart</button></form>
+   </div>
+   <div class="panel-b">
+    <div class="tabs mb2">
+     <button type="button" data-symbol-pick="FOREXCOM:SPXUSD" data-target="#chart">S&amp;P 500</button><button type="button" data-symbol-pick="FOREXCOM:NSXUSD" data-target="#chart">Nasdaq 100</button><button type="button" data-symbol-pick="NASDAQ:NVDA" data-target="#chart">NVDA</button><button type="button" data-symbol-pick="NASDAQ:AAPL" data-target="#chart">AAPL</button><button type="button" data-symbol-pick="NASDAQ:TSLA" data-target="#chart">TSLA</button><button type="button" data-symbol-pick="BITSTAMP:BTCUSD" data-target="#chart">BTC</button><button type="button" data-symbol-pick="FX:EURUSD" data-target="#chart">EUR/USD</button><button type="button" data-symbol-pick="OANDA:XAUUSD" data-target="#chart">Gold</button><button type="button" data-symbol-pick="TVC:US10Y" data-target="#chart">US 10Y</button>
+    </div>
+    <div class="tv" id="chart" data-tv="advanced-chart" data-h="600" data-eager></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="tight alt" id="assets">
+ <div class="wrap">
+  <div class="panel" data-tabs id="assetTabs">
+   <div class="panel-h"><h2>By asset class</h2><div class="tabs" role="tablist"><button class="on" data-tab="stocks" role="tab" aria-selected="true">Stocks</button><button data-tab="crypto" role="tab">Crypto</button><button data-tab="forex" role="tab">Forex</button><button data-tab="commodities" role="tab">Commodities</button><button data-tab="bonds" role="tab">Bonds</button><button data-tab="etfs" role="tab">ETFs</button></div></div>
+   <div class="panel-b">
+    <div data-panel="stocks" class="on"><div class="split"><div class="tv" data-tv="stock-heatmap" data-h="560"></div><div class="tv" data-tv="hotlists" data-h="560"></div></div></div>
+    <div data-panel="crypto"><div class="split"><div class="tv" data-tv="crypto-coins-heatmap" data-h="560"></div><div class="tv" data-tv="market-overview" data-h="560" data-config='{"tabs":[{"title":"Crypto","symbols":[{"s":"BITSTAMP:BTCUSD","d":"Bitcoin"},{"s":"BITSTAMP:ETHUSD","d":"Ethereum"},{"s":"BINANCE:SOLUSDT","d":"Solana"},{"s":"BINANCE:BNBUSDT","d":"BNB"},{"s":"BINANCE:XRPUSDT","d":"XRP"},{"s":"BINANCE:ADAUSDT","d":"Cardano"},{"s":"BINANCE:DOGEUSDT","d":"Dogecoin"},{"s":"BINANCE:AVAXUSDT","d":"Avalanche"}]}]}'></div></div></div>
+    <div data-panel="forex"><div class="split"><div class="tv" data-tv="forex-cross-rates" data-h="480"></div><div class="tv" data-tv="forex-heat-map" data-h="480"></div></div></div>
+    <div data-panel="commodities"><div class="tv" data-tv="market-overview" data-h="520" data-config='{"tabs":[{"title":"Metals","symbols":[{"s":"OANDA:XAUUSD","d":"Gold"},{"s":"OANDA:XAGUSD","d":"Silver"},{"s":"COMEX:HG1!","d":"Copper"},{"s":"NYMEX:PL1!","d":"Platinum"}]},{"title":"Energy","symbols":[{"s":"TVC:USOIL","d":"WTI Crude"},{"s":"TVC:UKOIL","d":"Brent Crude"},{"s":"NYMEX:NG1!","d":"Natural Gas"},{"s":"NYMEX:RB1!","d":"Gasoline"}]},{"title":"Agriculture","symbols":[{"s":"CBOT:ZC1!","d":"Corn"},{"s":"CBOT:ZW1!","d":"Wheat"},{"s":"CBOT:ZS1!","d":"Soybeans"},{"s":"ICEUS:KC1!","d":"Coffee"}]}]}'></div></div>
+    <div data-panel="bonds"><div class="tv" data-tv="market-overview" data-h="520" data-config='{"tabs":[{"title":"US Treasuries","symbols":[{"s":"TVC:US02Y","d":"US 2Y"},{"s":"TVC:US05Y","d":"US 5Y"},{"s":"TVC:US10Y","d":"US 10Y"},{"s":"TVC:US30Y","d":"US 30Y"}]},{"title":"Global 10Y","symbols":[{"s":"TVC:DE10Y","d":"Germany"},{"s":"TVC:GB10Y","d":"UK"},{"s":"TVC:JP10Y","d":"Japan"},{"s":"TVC:CA10Y","d":"Canada"},{"s":"TVC:IN10Y","d":"India"}]}]}'></div><p class="small muted mt2">New to yields? Read <a href="learn/bonds-and-the-yield-curve.html">Bonds and the Yield Curve, Explained</a>.</p></div>
+    <div data-panel="etfs"><div class="tv" data-tv="etf-heatmap" data-h="560"></div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="tight">
+ <div class="wrap split">
+  <div class="panel"><div class="panel-h"><h2>Market news</h2><span class="tag blue">Live feed</span></div><div class="panel-b"><div class="tv" data-tv="timeline" data-h="620"></div></div></div>
+  <div>
+   <div class="panel"><div class="panel-h"><h2>Technical rating</h2><span class="small muted">AAPL</span></div><div class="panel-b"><div class="tv" data-tv="technical-analysis" data-h="420"></div></div></div>
+   <div class="cta-band mt2" style="grid-template-columns:1fr;padding:24px"><div><h3>Get the week ahead in 5 minutes</h3><p class="muted small">The Monday Market Brief: key levels, events and one idea to research.</p><a class="btn btn-pri btn-block" href="leads.html">Subscribe free</a></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="alt">
+ <div class="wrap prose">
+  <h2 class="mt0">How to use this dashboard</h2>
+  <p><strong>Start broad, then narrow.</strong> Glance at the ticker tape for the overall mood: are the major indices, Bitcoin and the US dollar moving together or apart? Then open the heatmap for your asset class to see whether a move is broad (most blocks one colour) or concentrated in a few large names.</p>
+  <p><strong>Use the advanced chart for context.</strong> Switch time frames with the range buttons at the bottom. A 2% drop looks dramatic on a one-day chart and trivial on a five-year chart. Add indicators such as the 50- and 200-day moving averages from the chart toolbar to see the longer trend. Our guide on <a href="learn/how-to-read-stock-charts.html">reading stock charts</a> walks through each tool.</p>
+  <p><strong>Check the calendar before reacting.</strong> Many big moves happen around scheduled data releases. The <a href="calendar.html">economic calendar</a> shows what is coming and how markets usually respond.</p>
+  <p><strong>Symbol format:</strong> type <code>EXCHANGE:TICKER</code> for exact matches, for example <code>NASDAQ:MSFT</code>, <code>NYSE:JPM</code>, <code>TSX:SHOP</code>, <code>NSE:RELIANCE</code>, <code>BINANCE:ETHUSDT</code> or <code>FX:GBPUSD</code>.</p>
+  <p class="note">Quotes may be delayed and are for information only. Market.Watch does not provide investment advice. See our <a href="disclaimer.html">disclaimer</a>.</p>
+ </div>
+</section>
+</main>
+<div id="mw-foot"></div>
+<script src="assets/js/site.js" defer></script>
+<script>document.addEventListener('DOMContentLoaded',function(){var h=location.hash.replace('#','');var b=h&&document.querySelector('#assetTabs [data-tab="'+h+'"]');if(b){b.click();document.getElementById('assets').scrollIntoView()}});</script>
+</body>
+</html>
