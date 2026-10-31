@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Market Forecast Challenge: Free Contests & Prizes | Market.Watch</title>
+<meta name="description" content="Enter the free, skill-based Market.Watch Forecast Challenge. Predict month-end closes for the S&P 500, Bitcoin and gold to win cash prizes. Official rules inside.">
+<link rel="canonical" href="https://market.watch/contests.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Market.Watch"><meta property="og:title" content="Market Forecast Challenge | Market.Watch"><meta property="og:description" content="Free, skill-based market forecasting contest with cash prizes."><meta property="og:url" content="https://market.watch/contests.html"><meta property="og:image" content="https://market.watch/assets/img/og.svg"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0e16">
+<meta name="google-adsense-account" content="ca-pub-6620975821265271">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('mw-theme')||'dark')}catch(e){}</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6620975821265271" crossorigin="anonymous"></script>
+</head>
+<body data-page="contests">
+<div id="mw-top"></div>
+<main id="main">
+<section class="page-hero">
+ <div class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> / Contests</div>
+  <span class="tag warn">Free to enter &middot; Skill-based</span>
+  <h1 class="mt2">Market Forecast Challenge</h1>
+  <p class="lead">Each month, forecast where three markets will close on the last trading day. The most accurate forecasters win. No purchase, no trading account, no luck required.</p>
+  <div class="stats" style="max-width:760px"><div class="stat"><b>$250</b><span>1st prize</span></div><div class="stat"><b>$100</b><span>2nd prize</span></div><div class="stat"><b>$50</b><span>3rd prize</span></div><div class="stat"><b id="cd">&ndash;</b><span>Entries close</span></div></div>
+ </div>
+</section>
+<section class="tight">
+ <div class="wrap split">
+  <div>
+   <div class="panel"><div class="panel-h"><h2>The three markets this round</h2><span class="tag">Live</span></div><div class="panel-b"><div class="tv" data-tv="market-overview" data-h="440" data-config='{"tabs":[{"title":"Challenge","symbols":[{"s":"FOREXCOM:SPXUSD","d":"S&P 500"},{"s":"BITSTAMP:BTCUSD","d":"Bitcoin"},{"s":"OANDA:XAUUSD","d":"Gold"}]}]}'></div></div></div>
+   <h2 class="mt4">How it works</h2>
+   <div class="timeline mt2">
+    <div><b>1. Forecast</b><p class="muted">Submit your predicted closing value for the S&amp;P 500 index, Bitcoin (USD) and gold (USD/oz) on the month&rsquo;s final trading day.</p></div>
+    <div><b>2. Lock in</b><p class="muted">Entries close at 23:59 UTC on the 20th of each month. One entry per person per round.</p></div>
+    <div><b>3. Score</b><p class="muted">Your score is the sum of absolute percentage errors across the three markets. Lowest score wins. Ties are broken by the earliest entry.</p></div>
+    <div><b>4. Win</b><p class="muted">Winners are announced in the Monday Market Brief and on this page within 7 days of month end.</p></div>
+   </div>
+   <h2 class="mt4">More contests</h2>
+   <div class="grid g2 mt2">
+    <div class="card"><span class="tag blue">Quarterly</span><h3 class="mt2">Paper Portfolio Cup</h3><p>Build a 5-stock paper portfolio at quarter start. Best risk-adjusted return wins a $500 prize pool.</p></div>
+    <div class="card"><span class="tag blue">Students</span><h3 class="mt2">Market Analysis Essay Award</h3><p>A $1,000 scholarship for the best 1,500-word analysis of a market trend, judged by our editorial team.</p></div>
+   </div>
+  </div>
+  <div>
+   <form class="form-card sticky" data-mw-form="Contest entry: Forecast Challenge" data-ok="Entry received! Good luck. We'll confirm by email and announce winners after month end.">
+    <h2 style="font-size:1.35rem">Enter this round</h2>
+    <p class="small muted" id="roundLbl"></p>
+    <input type="hidden" name="round" id="roundIn">
+    <div class="field"><label for="cSpx">S&amp;P 500 close forecast</label><input id="cSpx" name="forecast_sp500" type="number" step="0.01" min="0" required></div>
+    <div class="field"><label for="cBtc">Bitcoin close forecast (USD)</label><input id="cBtc" name="forecast_btc" type="number" step="0.01" min="0" required></div>
+    <div class="field"><label for="cGold">Gold close forecast (USD/oz)</label><input id="cGold" name="forecast_gold" type="number" step="0.01" min="0" required></div>
+    <div class="field"><label for="cWhy">Your reasoning in one sentence (optional)</label><input id="cWhy" name="reasoning"></div>
+    <div class="row"><div class="field"><label for="cName">Name</label><input id="cName" name="name" required autocomplete="name"></div><div class="field"><label for="cCountry">Country</label><input id="cCountry" name="country" required></div></div>
+    <div class="field"><label for="cEmail">Email</label><input id="cEmail" type="email" name="email" required autocomplete="email"></div>
+    <label class="opt"><input type="checkbox" name="age_18" value="yes" required> I am 18 or older (or the age of majority where I live).</label>
+    <label class="opt mb2"><input type="checkbox" name="rules" value="accepted" required> I accept the <a href="#rules">official rules</a> and <a href="privacy.html">Privacy Policy</a>.</label>
+    <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off">
+    <button class="btn btn-pri btn-block btn-lg" type="submit">Submit my forecast</button>
+    <div class="form-msg" role="status"></div>
+    <p class="fine">Want to fund a prize? <a href="advertise.html">Become a contest sponsor</a>.</p>
+   </form>
+  </div>
+ </div>
+</section>
+<section class="alt" id="rules">
+ <div class="wrap prose">
+  <h2 class="mt0">Official rules (summary)</h2>
+  <ol>
+   <li><b>No purchase necessary.</b> A purchase, donation or subscription does not improve your chance of winning. Entry is free.</li>
+   <li><b>Eligibility.</b> Open to individuals aged 18+ (or the age of majority in their jurisdiction). Void where prohibited or restricted by law. Market.Watch staff and their immediate families are not eligible.</li>
+   <li><b>Contest of skill.</b> Winners are determined solely by forecast accuracy as described above. Where required by law (for example in Canada), prize winners must correctly answer a time-limited skill-testing mathematical question.</li>
+   <li><b>Reference prices.</b> Official closes are taken from the TradingView symbols FOREXCOM:SPXUSD, BITSTAMP:BTCUSD and OANDA:XAUUSD at the daily close on the final trading day of the month.</li>
+   <li><b>One entry</b> per person per round; duplicate or automated entries are disqualified.</li>
+   <li><b>Prizes</b> are paid within 30 days via PayPal, bank transfer or gift card. Winners are responsible for any taxes. Prizes are non-transferable.</li>
+   <li><b>Notification.</b> Winners are notified by email and must respond within 14 days, otherwise an alternate winner is selected.</li>
+   <li><b>Publicity.</b> Winners agree that their first name and country may be published.</li>
+   <li><b>Changes.</b> Market.Watch may modify, suspend or cancel a round in case of fraud, technical failure or events beyond its control.</li>
+  </ol>
+  <p class="note">This contest is for entertainment and education. Forecasts are not investment advice and are not shared as recommendations.</p>
+ </div>
+</section>
+<section>
+ <div class="wrap"><h2>Hall of fame</h2><div class="grid g3 mt2"><div class="card center"><div class="ic" style="margin:0 auto 12px">&#129351;</div><h3>Round 1 winner</h3><p>Announced after the first month closes. Could be you.</p></div><div class="card center"><div class="ic" style="margin:0 auto 12px">&#129352;</div><h3>Runner-up</h3><p>To be announced.</p></div><div class="card center"><div class="ic" style="margin:0 auto 12px">&#129353;</div><h3>Third place</h3><p>To be announced.</p></div></div></div>
+</section>
+</main>
+<div id="mw-foot"></div>
+<script src="assets/js/site.js" defer></script>
+<script>(function(){var n=new Date(),y=n.getUTCFullYear(),m=n.getUTCMonth();if(n.getUTCDate()>20){m++;if(m>11){m=0;y++}}var close=new Date(Date.UTC(y,m,20,23,59)),name=close.toLocaleString('en-US',{month:'long',year:'numeric',timeZone:'UTC'});document.getElementById('roundLbl').textContent='Round: '+name+' · entries close '+close.toUTCString().slice(0,16);document.getElementById('roundIn').value=name;var d=Math.max(0,Math.ceil((close-n)/864e5));document.getElementById('cd').textContent=d+(d===1?' day':' days')})();</script>
+</body>
+</html>
