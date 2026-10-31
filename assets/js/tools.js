@@ -34,7 +34,7 @@ bind('fPE',function(){var eps=v('peE'),g=v('peG')/100,y=v('peY')||5,pe=v('peT'),
 bind('fInf',function(){var a=v('inA'),r=v('inR')/100,y=v('inY');var fut=a*Math.pow(1+r,y),pp=a/Math.pow(1+r,y);
   out('inOut','<div class="muted small">Cost of the same basket in '+N.format(y)+' years</div><div class="big dn">'+USD.format(fut)+'</div>'+kv('Purchasing power of '+USD.format(a)+' then',USD.format(pp))+kv('Value lost',N.format(a?(1-pp/a)*100:0)+'%','dn'))});
 
-bind('f72',function(){var r=v('r72');out('o72','<div class="muted small">Years to double</div><div class="big">'+(r>0?N.format(72/r):'–')+'</div>'+kv('Exact (log formula)',r>0?N.format(Math.log(2)/Math.log(1+r/100))+' yrs':'–')+kv('10× your money',r>0?N.format(Math.log(10)/Math.log(1+r/100))+' yrs':'–'))});
+bind('f72',function(){var r=v('r72v');out('o72','<div class="muted small">Years to double</div><div class="big">'+(r>0?N.format(72/r):'–')+'</div>'+kv('Exact (log formula)',r>0?N.format(Math.log(2)/Math.log(1+r/100))+' yrs':'–')+kv('10× your money',r>0?N.format(Math.log(10)/Math.log(1+r/100))+' yrs':'–'))});
 
 bind('fDiv',function(){var p=v('dvP'),d=v('dvD'),s=v('dvS'),g=v('dvG')/100;var y=p?d/p*100:0,inc=d*s,inc10=inc*Math.pow(1+g,10);
   out('dvOut','<div class="muted small">Dividend yield</div><div class="big up">'+N.format(y)+'%</div>'+kv('Annual income',USD.format(inc),'up')+kv('Monthly average',USD.format(inc/12))+kv('Income in 10 yrs at '+N.format(g*100)+'% growth',USD.format(inc10))+kv('Yield on cost in 10 yrs',N.format(p?d*Math.pow(1+g,10)/p*100:0)+'%'))});
