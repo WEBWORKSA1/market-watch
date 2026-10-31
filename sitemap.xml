@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://market.watch/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://market.watch/markets.html</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+<url><loc>https://market.watch/screener.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/calendar.html</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/tools.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+<url><loc>https://market.watch/watchlist.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://market.watch/learn.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://market.watch/learn/how-the-stock-market-works.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/learn/etfs-and-index-funds-explained.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/learn/how-to-read-stock-charts.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/learn/understanding-pe-ratio-and-valuation.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/learn/compound-interest-and-dollar-cost-averaging.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/learn/economic-indicators-that-move-markets.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/learn/risk-management-and-position-sizing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/learn/bonds-and-the-yield-curve.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/learn/crypto-market-basics.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/learn/building-a-diversified-portfolio.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/glossary.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://market.watch/videos.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://market.watch/leads.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://market.watch/contests.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://market.watch/support.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://market.watch/careers.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://market.watch/advertise.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://market.watch/about.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+<url><loc>https://market.watch/contact.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+<url><loc>https://market.watch/privacy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>https://market.watch/terms.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>https://market.watch/disclaimer.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<url><loc>https://market.watch/cookies.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>
